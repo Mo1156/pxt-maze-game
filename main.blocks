@@ -1,0 +1,135 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="$4sV6{[^[INJA^[1l6,a">mySprite</variable><variable type="KIND_SpriteKind" id="S]%6Av[]u}wL{uGwX49`">Player</variable><variable type="KIND_SpriteKind" id="D,Y.TSI!_Gv^H8GG,@Fm">Projectile</variable><variable type="KIND_SpriteKind" id="y,zU$$?B|!n2k(YwaB=r">Food</variable><variable type="KIND_SpriteKind" id="L`7z5q4aRV%v+HcA0WSa">Enemy</variable></variables><block type="pxt-on-start" x="0" y="0"><statement name="HANDLER"><block type="gamesettilemap"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="map"><shadow type="tilemap_image_picker"><field name="img">img`
+e 7 7 7 7 7 7 7 7 7 7 7 7 7 8 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+e 7 7 7 7 7 7 7 7 7 7 7 7 7 8 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+e 7 7 7 7 7 7 7 7 7 7 7 7 7 8 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+e 7 7 7 7 7 7 7 7 7 7 7 b b b b b b 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+e 7 7 7 7 7 7 7 7 7 7 7 b b b b b b 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+e 7 7 7 7 7 7 7 7 7 7 7 7 7 8 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+e 7 7 7 7 7 7 7 7 7 7 7 7 7 8 8 8 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 
+e 7 7 7 7 7 7 2 2 2 2 7 7 7 7 7 8 7 7 7 7 7 7 7 7 7 7 7 7 2 7 7 
+e 7 7 7 7 7 7 2 7 7 7 7 7 7 7 7 7 e e e e e e e e e 7 7 7 2 7 7 
+e 7 7 7 7 2 2 2 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 e e 7 7 2 7 7 
+e 7 7 2 2 2 7 7 7 7 7 7 7 7 7 7 7 7 7 7 e e e e e e e 7 7 2 2 7 
+e 7 7 2 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 e 7 7 7 7 7 7 7 7 7 2 7 
+e 7 7 2 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 e 7 7 7 7 7 7 7 7 7 2 7 
+e 7 7 2 2 2 2 2 2 7 7 7 7 7 7 7 7 7 7 7 e 7 7 7 7 7 7 7 7 7 2 7 
+e 7 7 2 7 7 7 7 2 7 7 7 7 7 7 7 7 7 7 e e 7 7 7 7 7 7 7 7 7 2 7 
+e 7 7 2 7 7 7 7 2 7 7 7 7 7 7 7 7 e e 7 7 7 7 7 7 7 7 7 7 7 2 7 
+e 7 7 2 7 7 7 7 2 7 7 7 7 7 7 7 e e 7 7 7 7 7 7 7 7 2 7 7 7 2 7 
+e 7 7 2 7 7 7 7 2 7 7 7 7 7 7 7 7 e 7 7 7 7 7 7 7 2 2 7 7 7 2 2 
+e 7 7 7 7 7 2 2 2 7 7 7 7 7 7 7 7 e 7 7 7 7 7 7 7 2 7 7 7 7 7 2 
+e 7 7 7 7 7 2 7 7 7 7 7 7 7 7 7 7 e 7 7 7 7 7 7 7 2 7 7 7 7 7 2 
+e 7 7 7 7 7 2 7 7 7 7 7 7 7 7 7 7 e 7 7 7 7 7 7 7 2 2 7 7 7 2 2 
+e 2 2 2 7 7 2 2 2 7 7 7 7 7 7 7 7 e e 7 7 7 7 7 7 7 2 2 2 2 2 7 
+e 7 7 2 7 7 7 7 2 7 7 7 7 7 7 7 7 7 e e e 7 7 7 7 7 7 7 7 7 7 7 
+e 7 7 2 7 7 7 7 2 2 7 7 7 7 7 7 7 7 7 7 e e 7 7 7 7 7 7 7 7 7 7 
+e 7 7 2 7 7 2 2 2 2 7 7 7 7 7 7 7 7 7 7 7 e 7 7 7 7 7 7 7 7 7 7 
+e 7 7 2 2 2 7 7 7 7 7 7 7 7 7 7 7 7 7 7 e 7 7 7 7 7 7 7 7 7 7 7 
+e 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 e 7 7 7 7 7 7 7 7 7 7 7 
+e 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 e e e e e e e e e e e e 
+e 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 e 
+e 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 e 
+e 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 e 
+e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e 
+`</field></shadow></value><next><block type="gamesettile"><comment id="undefined" pinned="false" h="80" w="160">when turned on player cannot move passed this color and there is a texture to add to the brown</comment><value name="index"><shadow type="colorindexpicker"><field name="index">14</field></shadow></value><value name="img"><shadow type="tile_image_picker"><field name="img">img`
+e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . e 
+e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e e 
+`</field></shadow></value><value name="wall"><shadow type="toggleOnOff"><field name="on">true</field></shadow></value><next><block type="gamesettile"><value name="index"><shadow type="colorindexpicker"><field name="index">8</field></shadow></value><value name="img"><shadow type="tile_image_picker"><field name="img">img`
+8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
+8 8 6 6 6 8 8 8 8 8 8 8 6 6 8 8 
+8 8 8 8 8 6 6 8 8 6 6 6 8 6 8 8 
+8 8 6 6 8 8 8 8 8 8 8 8 8 6 6 8 
+8 8 6 8 8 6 6 6 6 8 8 8 8 8 6 8 
+8 8 8 8 8 8 8 8 8 8 8 6 8 8 8 8 
+8 8 8 8 8 8 8 8 8 8 8 6 8 8 8 8 
+8 8 8 6 6 6 6 6 6 8 8 8 8 8 8 8 
+8 8 8 8 8 8 8 8 6 8 8 8 8 6 8 8 
+8 8 8 8 8 6 6 8 8 8 8 8 6 6 8 8 
+8 8 6 8 8 8 8 8 8 8 8 6 8 8 8 8 
+8 6 6 8 8 8 8 8 8 8 6 6 8 8 8 8 
+8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 
+8 6 6 6 8 6 6 6 6 8 8 8 8 6 8 8 
+8 8 8 8 8 8 8 8 8 8 8 8 6 6 8 8 
+8 8 8 8 8 8 8 8 8 8 8 8 8 6 8 8 
+`</field></shadow></value><value name="wall"><shadow type="toggleOnOff"><field name="on">true</field></shadow></value><next><block type="gamesettile"><value name="index"><shadow type="colorindexpicker"><field name="index">2</field></shadow></value><value name="img"><shadow type="tile_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . 2 2 2 2 . . . . 2 2 . . . . 
+. . 2 . . 2 . . . . 2 2 . . . . 
+. . 2 . . 2 . . . 2 2 . 2 . . . 
+. . . . . 2 2 . . 2 . . 2 . . . 
+. . . . . . . 2 2 2 . . 2 . . . 
+. . . . . . . . . . . 2 2 . . . 
+. . . . . . . . . . . 2 2 . . . 
+. . 2 2 2 2 . . . . . . 2 2 . . 
+. . 2 . . . 2 2 . . . 2 2 2 . . 
+. . 2 . . . . . 2 2 2 . . . . . 
+. . 2 2 2 2 . . . . . . . . . . 
+. . . . . 2 2 . . . . . . . . . 
+. . . . . . . 2 . . . . . . . . 
+`</field></shadow></value><value name="wall"><shadow type="toggleOnOff"><field name="on">true</field></shadow></value><next><block type="gamesettile"><value name="index"><shadow type="colorindexpicker"><field name="index">0</field></shadow></value><value name="img"><shadow type="tile_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="wall"><shadow type="toggleOnOff"><field name="on">false</field></shadow></value><next><block type="variables_set"><field name="VAR" id="$4sV6{[^[INJA^[1l6,a">mySprite</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . 
+. . . . f f f f . . . . . 
+. . f f f f f f f f . . . 
+. f f f c f f f f f f . . 
+c f f f c c f f f f f f f 
+c f f f f f f f c f f f f 
+c c f f e e f f f c c c . 
+f c c f f e e f f f f f . 
+f f f b f e e f b f f f . 
+f f 4 1 f 4 4 f 1 4 f f . 
+e f e e 4 4 4 4 4 e f . . 
+e 4 4 4 e 7 7 7 b f e f . 
+. e 4 4 e 7 7 7 7 f 4 e . 
+. . e e 6 6 6 6 6 f . . . 
+. . . f f f f f f f . . . 
+. . . . . . . f f f . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><comment id="undefined" pinned="false" h="80" w="160">moves sprite</comment><value name="sprite"><shadow type="variables_get"><field name="VAR" id="$4sV6{[^[INJA^[1l6,a">mySprite</field></shadow></value><next><block type="camerafollow"><comment id="undefined" pinned="false" h="80" w="160">Camera follows sprite</comment><value name="sprite"><shadow type="variables_get"><field name="VAR" id="$4sV6{[^[INJA^[1l6,a">mySprite</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
