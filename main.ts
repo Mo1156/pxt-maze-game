@@ -155,22 +155,22 @@ controller.moveSprite(mySprite, 100, 100)
 scene.cameraFollowSprite(mySprite)
 for (let index = 0; index < 40; index++) {
     mySprite2 = sprites.create(img`
-. . . . . . . . . . . . . c c f f f . . . . . . . . . . . . . . 
-. . . . . . . . . . . . c d d b b f . . . . . . . . . . . . . . 
-. . . . . . . . . . . c d d b b f . . . . . . . . . . . . . . . 
-. . . . . . . . . . f c c b b c f . . . . . . . . . . . . c c c 
-. . . . f f f f f f c c c c c c f f . . . . . . . . . c c b b c 
-. . f f b b b b b b b b b b b b b c f f f . . . . . c d b b c . 
-f f b b b b b b b b b c b c b b b b c c c f f . . c d d b b f . 
-f b c b b b b b f f b b c b c b b b c c c c c f f f d b b f . . 
-f b b b 2 2 2 2 f f 2 b c b c b b b c c c c c c c b b b c f . . 
-. f b 2 2 2 2 2 2 2 2 b b b b b b c c c c c c c c c b c c f . . 
-. . f c c c 3 3 c c 2 2 b b b b c c c c c c c c f f f b b c f . 
-. . . f c 2 2 2 c 2 2 2 b b b c c c c c b d b c . . . f b b f . 
-. . . . f 2 2 2 2 2 2 c b b b f d d d d d c c . . . . . f b b f 
-. . . . . f f 2 2 2 2 f b d b b f d d c c . . . . . . . . f f f 
-. . . . . . . c c c c c f b d b b f c . . . . . . . . . . . . . 
-. . . . . . . . . . . . . f f f f f . . . . . . . . . . . . . . 
+1 1 1 1 1 1 1 1 1 1 1 7 1 1 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 7 7 7 7 7 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 7 7 1 1 7 1 7 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 7 7 1 1 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 7 7 1 1 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 7 7 1 1 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 7 7 7 7 7 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 7 1 1 7 7 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 7 1 1 7 1 1 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 7 1 1 7 1 1 7 1 1 7 7 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 7 1 1 7 1 1 7 1 1 1 7 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 7 1 1 7 1 1 7 1 1 1 7 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 7 7 1 7 1 1 7 1 1 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 7 7 7 7 7 7 7 7 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 7 1 1 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 7 7 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
 `, SpriteKind.Food)
     mySprite2.setPosition(Math.randomRange(0, 512), Math.randomRange(0, 512))
     info.startCountdown(100)
